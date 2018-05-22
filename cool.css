@@ -12,9 +12,22 @@ BASE STYLES
 *************/
 
 header {
-  /* background:linear-gradient(darkred,red); */
+  padding: 30px;
   color: white;
   font-size: 20px;
+}
+
+#navbar {
+  line-height: 80px;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+  /* position:fixed; */
+}
+
+A:visited {
+  color: white;
 }
 
 a:link {
@@ -26,26 +39,100 @@ img {
   max-width: 100%;
   height: auto;
 }
-a:hover{
-  color:goldenrod ;
+
+.container {
+  display: block;
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px 50px;
+  background-color: grey;
+  justify-content: space-between;
 }
-body {
-  color: #000;
+
+.forms {
+  border-radius: 30px;
+  padding: 35px;
+  display: flex;
+}
+
+#fullName {
+  border-radius: 15px;
+}
+
+#letter {
+  border-radius: 15px;
+}
+
+#submit-btn {
+  border-radius: 20px;
+  background: linear-gradient(white, gold);
+  padding: 15px;
+}
+
+.main {
+  flex: 2;
+  order: 2;
+}
+
+.sidebar-one {
+  flex: 1;
+  order: 1;
+  /* padding-left:35px; */
+  /* margin-left:20px; */
+}
+
+.sidebar-two {
+  flex: 1;
+  order: 3;
+}
+
+#indexPage {
+  color: white;
   font-size: 40px;
   font-family: sans-serif;
-  background-image: url("water2.jpg");
+  background-image: url("img/bed-bible-book-bindings-935944.jpg");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
+  background-size: cover;
+  background-color: grey;
+  background-attachment: fixed;
+  padding: 30px;
+  /* opacity: 0.70; */
+}
+
+.round2 {
+  background-image: url('img/pexels-photo-112990.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  background-attachment: fixed;
+}
+
+.hero-2 {
+  text-align: center;
+  padding: 50px 80px;
 }
 
 ul {
+  list-style-type: none;
   text-align: center;
   padding: 10px;
+  display: flex;
 }
 
-li {
-  display: inline;
-  padding: 0px 10px 0px 10px;
+a {
+  display: block;
+  text-decoration: none;
+  transition: 500ms;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a:hover {
+  background-color: goldenrod;
+  transform: scale(1.2);
+  border-radius: 20px;
 }
 
 .push {
@@ -54,22 +141,50 @@ li {
   font-size: 30px;
 }
 
-.page {}
-
 footer {
   background: gray;
   text-align: center;
+  overflow: auto;
 }
 
-.logo{
-  width:200px;
-  height:200px;
+.logo {
+  width: 200px;
+  height: 200px;
 }
 
-.error_message{
-color:red;
-padding:12px;
+.error {
+  color: red;
+  padding: 12px;
+}
 
+
+
+/* other page */
+
+#nextPage {
+  background-color: white;
+}
+
+#mission {
+  background-image: url("img/praying hands.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container2 {
+  display:block;
+  padding-left: 0px;
+}
+
+main {
+  flex: 1;
+  background-color: lightcoral;
+  width: 70%;
+}
+
+aside {
+  width: 30%;
+  font-size: 20px;
 }
 
 /* *********** */
@@ -77,15 +192,25 @@ padding:12px;
 /* tablet styles */
 
 @media (min-width:768px) {
-  body {
-    background-color: green;
+  .forms .container .container2 {
+    display: flex;
+  }
+  #indexPage {
+    background-image: url('img/bed-bible-book-bindings-935944.jpg');
   }
 }
-
-/* desktop styles */
-
-@media(min-width:1000px) {
-  body {
-    background: purple;
+  /* desktop styles */
+  @media(min-width:560px) {
+    .forms .container .container2 {
+      display: flex;
+    }
+    #indexPage {
+      background-image: url('img/bed-bible-book-bindings-935944.jpg');
   }
+  .error_info {
+    border-color: crimson;
+  }
+.great{
+  border-color:green;
 }
+  }

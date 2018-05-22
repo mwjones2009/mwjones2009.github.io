@@ -1,44 +1,42 @@
-$(document).ready(function () {
+$('document').ready(function () {
   console.log('hey we ready!');
 
-  // $('#first' && '#last').on('input', function (event) {
-  //   console.log('okkkkkk');
-  //   var first = $(this).val();
-  //   if (first === '') {
-  //     event.preventDefault();
-  //     $('#first').addClass('error_message')
-  //   } else if {
 
+  
+
+  // $('#contactInfo').submit(function(fullname, email){
+  //   var allowableChars = /^
+  
+  //   if(fullname.value.match(allowableChars)) {
+  //     console.log('allowed');
   //   } else {
+  //     console.log('nuh-uh');
+
+    $('form').on('submit',function (event) {
+      console.log('okk');
+      var first = $(this).val();
+      console.log('first');
+      if (first === '') {
+        alert('Must Enter Full Name');
+        event.preventDefault();
+        $('submit').addClass('error_info');
+        $(this).removeClass('great');
+      }
+    });
+
+ // else if {
+
+    // } else {
 
   //   } {
 
   //   }
   // })
 
-function validate(event){
-
-}
-
-  //  function validate(event) {
-  //   var firstName = $('#first').val();
-  //   event.preverntDefault();
-  //   $('form').submit(validate);
-  //   console.log('working!!!!');
-
-  // if (firstName === '') {
-  //   event.preventDefault();
-  //   $('#first').addClass('error');
-  // } else {
-  //   ('#first')
-  // .removeClass('error');}
-
-  // $('form').submit(validate);
-
-  // $('form').submit(validate);
-  // console.log('working');
 
 
+// var navOffSet=jquery ('nav').offset().top;
+// console.log('working');
 
 
 

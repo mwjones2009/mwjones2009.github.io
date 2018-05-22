@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
-<body>
+<body id="indexPage">
   <p id="sayHello"></p>
   <header>
     <img class="logo" src="img/Logo_of_the_United_Methodist_Church.svg.png" alt="logo">
@@ -18,50 +18,97 @@
     <a href="#">
       <h1> UMUC</a>
     </h1>
-    <ul>
-      <li>
-        <a href="#">About Us</a>
-      </li>
-      <li>
-        <a href="#">News Center</a>
-      </li>
-      <li>
-        <a href=#>Ministeries</a>
-      </li>
-      <li>
-        <a href="#">Prayer Request</a>
-      </li>
-      <li>
-        <a href="#">Contact Us</a>
-      </li>
-    </ul>
-  </header>
+    <div id="navbar">
+      <nav>
+        <ul>
+          <li>
 
-  <form>
-    <input type="text" id="first" placeholder="First Name" >
-    <span class="error_message" id="error"></span>
-    <input type="text" id="last" placeholder="Last Name" >
-    <input type="email" id="letter" placeholder="EMAIL" >
-    <input type="Submit" value="SIGN UP" id="submit-btn">
-  </form>
+            <a href="#">About Us</a>
+
+          </li>
+          <li>
+
+            <a href="#">News Center</a>
+
+          </li>
+          <li>
+
+            <a href="missions.html">Ministeries</a>
+
+          </li>
+          <li>
+
+            <a href="#">Prayer Line</a>
+
+          </li>
+          <li>
+
+            <a href="#">Contact Us</a>
+
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="forms">
+    <form id="contactInfo">
+      <input type="text" id="fullName" name="fullname" placeholder="Full Name" required>
+      <span class="error_message" id="error"></span>
+      <!-- <input type="text" id="last" placeholder="Last Name"> -->
+      <input type="email" id="letter" placeholder="EMAIL">
+      <input type="Submit" value="SIGN UP" id="submit-btn">
+    </form>
+  </div>
 
   <h3>Daily Word</h3>
 
-  <div class="page">
-    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod odit vitae, voluptates suscipit tenetur obcaecati eveniet
-      atque praesentium, sapiente, nobis excepturi! Nihil pariatur veniam repudiandae impedit enim placeat eveniet nostrum?</p>
+
+
+
+  <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod odit vitae, voluptates suscipit tenetur obcaecati eveniet
+    atque praesentium, sapiente, nobis excepturi! Nihil pariatur veniam repudiandae impedit enim placeat eveniet nostrum?</p>
+  <div class="container">
+    <div class="main">
+      <h2>Here we are to Worship</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe nemo at provident soluta! Officiis est,
+        fugiat nisi itaque deleniti tempore ad sapiente temporibus unde facere molestias, eveniet qui earum.</p>
+    </div>
+    <div class="sidebar-one">
+      <h3>I feel like praising him</h3>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed id esse tenetur odit rerum tempore deserunt harum
+        magnam quasi doloribus saepe inventore praesentium optio quis facere, minus provident molestias!</p>
+    </div>
+    <div class="sidebar-two">
+      <h3>Hear the good news!</h3>
+      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum impedit id nisi ex. Veniam incidunt, non consequuntur
+        doloremque voluptatum omnis ut neque laudantium nesciunt soluta obcaecati voluptatem rem tenetur debitis.</p>
+    </div>
+  </div>
+
+  <div class="part-two">
+    <section class="round2">
+      <!-- <img src="img/church.jpg" alt="Church"> -->
+
+      <div class="hero-2">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit sint dolor commodi quidem, aperiam fugit
+          alias est veniam porro doloribus tenetur id nam eum ab molestiae qui deleniti incidunt!</p>
+      </div>
+    </section>
+
+
+
 
   </div>
-  <img src="img/church.jpg" alt="Church">
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="inthemix.js"></script>
 
 </body>
 
 <footer>
-  <h3>UMUC</h3>
+  <h3><a href="index.html">UMUC</a></h3>
   <small> copyright 2018.</small>
+
 </footer>
 
 
