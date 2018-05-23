@@ -41,12 +41,13 @@ img {
 }
 
 .container {
-  display: block;
-  max-width: 1300px;
+  display: flex;
+  max-width: 13px;
   margin: auto;
   padding: 20px 50px;
   background-color: grey;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 .forms {
@@ -67,16 +68,19 @@ img {
   border-radius: 20px;
   background: linear-gradient(white, gold);
   padding: 15px;
+  font-size:30px;
 }
 
 .main {
   flex: 2;
+  font-size: 10px;
   order: 2;
 }
 
 .sidebar-one {
   flex: 1;
   order: 1;
+  font-size: 10px;
   /* padding-left:35px; */
   /* margin-left:20px; */
 }
@@ -88,13 +92,13 @@ img {
 
 #indexPage {
   color: white;
-  font-size: 40px;
+  font-size: 10px;
   font-family: sans-serif;
   background-image: url("img/bed-bible-book-bindings-935944.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: grey;
+  /* background-color: grey; */
   background-attachment: fixed;
   padding: 30px;
   /* opacity: 0.70; */
@@ -157,8 +161,6 @@ footer {
   padding: 12px;
 }
 
-
-
 /* other page */
 
 #nextPage {
@@ -172,8 +174,9 @@ footer {
 }
 
 .container2 {
-  display:block;
+  display: block;
   padding-left: 0px;
+  font-size: 20px;
 }
 
 main {
@@ -192,25 +195,27 @@ aside {
 /* tablet styles */
 
 @media (min-width:768px) {
-  .forms .container .container2 {
+  .forms, .container, .container2 {
     display: flex;
   }
   #indexPage {
     background-image: url('img/bed-bible-book-bindings-935944.jpg');
   }
 }
-  /* desktop styles */
-  @media(min-width:560px) {
-    .forms .container .container2 {
-      display: flex;
-    }
-    #indexPage {
-      background-image: url('img/bed-bible-book-bindings-935944.jpg');
+
+/* desktop styles */
+
+@media(min-width:1000px) {
+  .forms, .container, .container2 {
+    display: flex;
+  }
+  #indexPage {
+    background-image: url('img/bed-bible-book-bindings-935944.jpg');
   }
   .error_info {
     border-color: crimson;
   }
-.great{
-  border-color:green;
-}
+  .great {
+    border-color: green;
   }
+}
