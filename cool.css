@@ -42,7 +42,7 @@ img {
 
 .container {
   display: flex;
-  /* max-width: 50px; */
+  max-width: 50px;
   margin: auto;
   padding: 20px 50px;
   background-color: grey;
